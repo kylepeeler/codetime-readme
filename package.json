@@ -1,0 +1,33 @@
+{
+  "name": "codetime-readme-stats",
+  "version": "0.0.1",
+  "description": "Dynamically generate stat cards from Software.com's Code Time & 100 Days of Code APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "author": "Kyle Peeler",
+  "license": "MIT",
+  "devDependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "@testing-library/dom": "^7.20.0",
+    "@testing-library/jest-dom": "^5.11.0",
+    "axios": "^0.19.2",
+    "axios-mock-adapter": "^1.18.2",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "github-username-regex": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
